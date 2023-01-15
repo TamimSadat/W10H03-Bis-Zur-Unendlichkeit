@@ -21,7 +21,8 @@ public class InfiniteTree<T> {
      */
     public InfiniteNode<T> withRoot(T value) {
         // TODO: Implementieren.
-        return null;
+        //Wenn parent null, dann ist dieser node gleichzeitig ein root
+        return new InfiniteNode<>(this, value, null);
     }
 
     /**
